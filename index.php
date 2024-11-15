@@ -17,46 +17,46 @@ if (!isset($_SESSION['username'])) { // If session is not set then redirect to L
 </head>
 
 <body style="background-color:#fff8e8; text-align: center;">
+    <div class="container py-4">
+        <div class="card" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+            <!-- Navbar --> 
+            <nav class="navbar navbar-expand-md navbar-light pt-3 pb-4" style="background-color: #FFEAC5;">
+                <div class="container-xxl">
+                    <a href="index.php" class="navbar-brand">
+                        <span class="text-secondary fw-bold">
+                            <i class="bi bi-people"></i>
+                            Student Information Registration System
+                        </span>
+                    </a>
+                    <!-- Toggle button for mobile nav -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <!-- Navbar --> 
-    <nav class="navbar navbar-expand-md navbar-light pt-3 pb-4" style="background-color: #FFEAC5;">
-        <div class="container-xxl">
-            <a href="index.php" class="navbar-brand">
-                <span class="text-secondary fw-bold">
-                    <i class="bi bi-people"></i>
-                    Student Management
-                </span>
-            </a>
-            <!-- Toggle button for mobile nav -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">List Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="create.php">Add Student</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php">List Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="create.php">Add Student</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.php">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     <br>
-    <img src="logo_utm.png" alt="This is UTM Logo" width="300" height="100">
-    <br><br>
+    <img src="logo_utm.png" alt="This is UTM Logo" width="300" height="100" style="display: block; margin: auto;">
+    <br>
 
     <h2 style="background-color:#FFEAC5;padding: 10px; border-radius: 8px;">Welcome, <?php echo $_SESSION['username']; ?>!</h2>
     <h1 style="font-style:italic ;font-weight:bolder ">Registered Students List</h1>
 
-    <div class="container">
-        <div class="card" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+    
             <div class="card-body">
                 <h5 class="card-title" style="font-style:italic; font-weight:strong">All Registered Students</h5>
                 <div class="table-responsive">
