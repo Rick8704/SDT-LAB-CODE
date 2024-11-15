@@ -18,6 +18,36 @@ if (!isset($_SESSION['username'])) { // If session is not set then redirect to L
 <body style="background-color: #fff8e8;">
     <div class="container py-4">
         <div class="text-center">
+            <!-- Navbar --> 
+                <nav class="navbar navbar-expand-md navbar-light pt-3 pb-4" style="background-color: #FFEAC5;">
+                    <div class="container-xxl">
+                        <a href="index.php" class="navbar-brand">
+                            <span class="text-secondary fw-bold">
+                                <i class="bi bi-people"></i>
+                                Student Management
+                            </span>
+                        </a>
+                        <!-- Toggle button for mobile nav -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php">List Students</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="create.php">Add Student</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logout.php">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             <img src="logo_utm.png" alt="This is UTM Logo" width="200" height="70">
             <h1 class="my-3" style="background-color: #FFEAC5; padding: 10px; border-radius: 8px; font-style: italic; font-weight: bolder;">
                 Student Registration Form
